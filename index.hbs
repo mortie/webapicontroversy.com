@@ -17,19 +17,19 @@ limitations under the License.
 
   <!--Twitter card headers-->
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@DasSurma" />
-  <meta name="twitter:title" content="Is Houdini Ready Yet?" />
-  <meta name="twitter:description" content="Overview over the current state of Houdini APIs in all major browsers." />
-  <meta name="twitter:image" content="https://surma.github.io/ishoudinireadyyet.com/images/star.png" />
+  <meta name="twitter:site" content="@voxpelli" />
+  <meta name="twitter:title" content="Web API Controversy" />
+  <meta name="twitter:description" content="Website to show browser opinions on controversial API:s" />
+  <meta name="twitter:image" content="https://webapicontroversy.com/images/star.png" />
 
   <!--Facebook Open Graph headers-->
-  <meta property="og:title" content="Is Houdini Ready Yet?" />
+  <meta property="og:title" content="Web API Controversy" />
   <meta property="og:type" content="website" />
-  <meta property="og:description" content="Overview over the current state of Houdini APIs in all major browsers." />
+  <meta property="og:description" content="Website to show browser opinions on controversial API:s" />
   <meta property="og:url" content="https://ishoudinireadyyet.com" />
-  <meta property="og:image" content="https://surma.github.io/ishoudinireadyyet.com/images/star.png" />
+  <meta property="og:image" content="https://webapicontroversy.com/images/star.png" />
 
-  <title>Is Houdini Ready Yet?</title>
+  <title>Web API Controversy</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
   <link rel="manifest" href="manifest.json">
   <link rel="icon" type="image/png" href="images/star.png">
@@ -131,10 +131,10 @@ limitations under the License.
     }
     .details--no,
     .status__completeness--no {
-      background-color: hsl(0, 50%, 65%);
+      background-color: hsl(0, 0, 65%);
     }
     .status__completeness--no::before {
-      content: 'No signal';
+      content: 'Unknown';
     }
     .details--consideration,
     .status__completeness--consideration,
@@ -168,6 +168,20 @@ limitations under the License.
     }
     .status__completeness--yes::before {
       content: 'Shipped';
+    }
+    .details--deprecated,
+    .status__completeness--deprecated {
+      background-color: hsl(34, 97%, 46%)
+    }
+    .status__completeness--deprecated::before {
+      content: 'Deprecated';
+    }
+    .details--harmful,
+    .status__completeness--harmful {
+      background-color: hsl(0, 69%, 48%)
+    }
+    .status__completeness--harmful::before {
+      content: 'Harmful';
     }
     .status__browser--spec.status__completeness--none {
       background-color: hsl(0, 50%, 65%);
@@ -259,7 +273,7 @@ limitations under the License.
   </style>
 </head>
 <body>
-  <h1 class="title">Is <a href="https://developers.google.com/web/updates/2016/05/houdini" target="_blank" rel="noopener noreferrer">Houdini</a> ready yet‽</h1>
+  <h1 class="title">Web API Controversy</h1>
   <table>
     <thead>
       <tr>
@@ -328,7 +342,9 @@ limitations under the License.
           <div id="{{api.tag}}_{{browser.tag}}" class="details details--{{lookup (lookup (lookup ../../status api.tag) browser.tag) "completeness"}}" data-browser="{{browser.tag}}" data-api="{{api.tag}}">
             <div class="details__content">
               <h2 class="details__title">{{api.name}} in {{browser.name}}</h2>
-              {{{read_partial api.tag browser.tag}}}
+              {{#if (lookup (lookup (lookup ../../status api.tag) browser.tag) "has_details")}}
+                {{{read_partial api.tag browser.tag}}}
+              {{/if}}
               <button class="details__close button">Close</button>
             </div>
           </div>
@@ -337,9 +353,10 @@ limitations under the License.
     {{/with}}
   {{/each}}
   <footer>
-    Maintained by <a href="https://twitter.com/DasSurma" target="_blank" rel="noopener noreferrer">Surma</a>,
-      source code & license in the <a href="https://github.com/surma/ishoudinireadyyet.com" target="_blank" rel="noopener noreferrer">repository</a> on GitHub,
-      last updated on {{last_update}}
+    Maintained by <a href="https://twitter.com/voxpelli" target="_blank" rel="noopener noreferrer">VoxPelli</a>,
+      source code & license in the <a href="https://github.com/voxpelli/webapicontroversy.com" target="_blank" rel="noopener noreferrer">repository</a> on GitHub, PR:s are much appreciated,
+      last updated on {{last_update}}<br />
+      Thanks a lot to <a href="https://twitter.com/DasSurma" target="_blank" rel="noopener noreferrer">Surma</a> who created <a href="https://ishoudinireadyyet.com/" target="_blank" rel="noopener noreferrer">Is Houdini ready yet?</a> which this site is based on.
   </footer>
   <script>
     (function() {
@@ -419,15 +436,6 @@ limitations under the License.
         openDetails.querySelector('.details__close').click();
       });
     })();
-  </script>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-82043152-1', 'auto');
-    ga('send', 'pageview');
   </script>
 </body>
 </html>

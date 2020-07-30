@@ -1,9 +1,9 @@
 {
   "background_color": "#ffffff",
-  "name": "Is Houdini Ready Yet?",
-  "short_name": "Houdini Ready?",
+  "name": "Web API Controversy",
+  "short_name": "API Controversy",
   "display": "browser",
-  "start_url": "https://ishoudinireadyyet.com",
+  "start_url": "https://webapicontroversy.com",
   "theme_color": "#ffffff",
   "icons": [
     {

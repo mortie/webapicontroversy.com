@@ -26,6 +26,11 @@
       "renderingEngine": "Blink"
     },
     {
+      "tag": "brave",
+      "name": "Brave",
+      "renderingEngine": "Blink"
+    },
+    {
       "tag": "safari",
       "name": "Apple Safari",
       "renderingEngine": "WebKit"
@@ -33,199 +38,94 @@
   ],
   "api": [
     {
-      "tag": "layout",
-      "name": "Layout API",
-      "spec": "https://drafts.css-houdini.org/css-layout-api/",
-      "demos": "https://github.com/GoogleChromeLabs/houdini-samples/tree/master/layout-worklet",
-      "explainer": "https://github.com/w3c/css-houdini-drafts/blob/master/css-layout-api/EXPLAINER.md",
-      "status": "fpwd"
-    },
-    {
-      "tag": "painting",
-      "name": "Paint API",
-      "spec": "https://drafts.css-houdini.org/css-paint-api/",
-      "demos": "https://github.com/GoogleChrome/houdini-samples/tree/master/paint-worklet",
-      "explainer": "https://github.com/w3c/css-houdini-drafts/blob/master/css-paint-api/EXPLAINER.md",
-      "article": "https://developers.google.com/web/updates/2018/01/paintapi",
-      "status": "cr"
-    },
-    {
-      "tag": "parser",
-      "name": "Parser API",
-      "spec": "https://drafts.css-houdini.org/css-parser-api/",
-      "explainer": "https://github.com/WICG/CSS-Parser-API/blob/master/README.md",
+      "tag": "webusb",
+      "name": "Web USB API",
+      "spec": "https://wicg.github.io/webusb/",
+      "demos": "https://github.com/WICG/webusb#demos",
+      "article": "https://developers.google.com/web/updates/2016/03/access-usb-devices-on-the-web",
       "status": "ed"
     },
     {
-      "tag": "propertiesandvalues",
-      "name": "Properties & Values API",
-      "spec": "https://drafts.css-houdini.org/css-properties-values-api/",
-      "demos": "https://github.com/GoogleChromeLabs/houdini-samples/tree/master/properties-and-values/",
-      "article": "https://web.dev/css-props-and-vals/",
-      "status": "wd"
+      "tag": "webbluetooth",
+      "name": "Web Bluetooth API",
+      "spec": "https://webbluetoothcg.github.io/web-bluetooth/",
+      "demos": "https://webbluetoothcg.github.io/demos/",
+      "article": "https://developers.google.com/web/updates/2015/07/interact-with-ble-devices-on-the-web",
+      "status": "ed"
     },
     {
-      "tag": "animation",
-      "name": "AnimationWorklet",
-      "explainer": "https://github.com/w3c/css-houdini-drafts/blob/master/css-animationworklet/README.md",
-      "spec": "https://wicg.github.io/animation-worklet/",
-      "demos": "https://github.com/GoogleChrome/houdini-samples/tree/master/animation-worklet",
-      "article": "https://developers.google.com/web/updates/2018/10/animation-worklet",
-      "status": "fpwd"
-    },
-    {
-      "tag": "typedom",
-      "name": "Typed OM",
-      "spec": "https://drafts.css-houdini.org/css-typed-om/",
-      "article": "https://developers.google.com/web/updates/2018/03/cssom",
-      "explainer": "https://github.com/w3c/css-houdini-drafts/blob/master/css-typed-om/README.md",
-      "status": "wd"
-    },
-    {
-      "tag": "fontmetrics",
-      "name": "Font Metrics API",
-      "spec": "https://drafts.css-houdini.org/font-metrics-api-1/",
-      "explainer": "https://github.com/w3c/css-houdini-drafts/blob/master/font-metrics-api/README.md",
+      "tag": "webnfc",
+      "name": "Web NFC API",
+      "spec": "https://w3c.github.io/web-nfc/",
+      "demos": "https://github.com/WICG/webusb#demos",
+      "explainer": "https://github.com/w3c/web-nfc/blob/gh-pages/EXPLAINER.md",
+      "article": "https://web.dev/nfc/",
       "status": "ed"
     }
   ],
   "status": {
-    "layout": {
+    "webusb": {
+      "brave": {
+        "completeness": "deprecated",
+        "has_details": true
+      },
       "chrome": {
-        "completeness": "partially",
-        "since": "Canary",
-        "has_details": true
+        "completeness": "yes",
+        "since": "Chrome 61"
       },
-      "edge": {
-        "completeness": "partially",
-        "since": "Canary",
-        "has_details": true
-      },
-      "opera": {
-        "completeness": "partially",
-        "since": "Developer",
+      "safari": {
+        "completeness": "harmful",
         "has_details": true
       },
       "firefox": {
-        "completeness": "intent",
+        "completeness": "harmful",
         "has_details": true
       }
     },
-    "painting": {
+    "webbluetooth": {
+      "brave": {
+        "completeness": "harmful",
+        "has_details": true
+      },
       "chrome": {
         "completeness": "yes",
-        "has_details": true,
-        "since": "Chrome 65"
-      },
-      "edge": {
-        "completeness": "yes",
-        "has_details": true,
-        "since": "Edge 79"
+        "since": "Chrome 56"
       },
       "opera": {
-        "completeness": "yes",
-        "has_details": true,
-        "since": "Opera 52"
-      },
-      "firefox": {
-        "completeness": "intent",
-        "has_details": true,
-        "since": "Servo"
-      },
-      "safari": {
-        "completeness": "development",
+        "completeness": "partially",
         "has_details": true
       },
       "samsung": {
         "completeness": "yes",
-        "has_details": true,
-        "since": "Internet 9.2"
-      }
-    },
-    "parser": {
-      "completeness": "intent"
-    },
-    "propertiesandvalues": {
-      "chrome": {
-        "completeness": "yes",
-        "has_details": true,
-        "since": "Chrome 78"
+        "since": "v6.4"
       },
-      "edge": {
-        "completeness": "yes",
-        "has_details": true,
-        "since": "Edge 79"
-      },
-      "opera": {
-        "completeness": "yes",
-        "has_details": true,
-        "since": "Opera 65"
+      "safari": {
+        "completeness": "harmful",
+        "has_details": true
       },
       "firefox": {
-        "completeness": "development",
+        "completeness": "harmful",
+        "has_details": true
+      }
+    },
+    "webnfc": {
+      "brave": {
+        "completeness": "harmful",
+        "has_details": true
+      },
+      "chrome": {
+        "completeness": "partially",
+        "since": "Chrome 81",
         "has_details": true
       },
       "safari": {
-        "completeness": "partially",
-        "has_details": true,
-        "since":  "Safari TP 67"
-      },
-      "samsung": {
-        "completeness": "yes",
-        "has_details": true,
-        "since": "Internet 12.0"
-      }
-    },
-    "typedom": {
-      "chrome": {
-        "completeness": "yes",
-        "has_details": true,
-        "since": "Chrome 66"
-      },
-      "edge": {
-        "completeness": "yes",
-        "has_details": true,
-        "since": "Edge 79"
+        "completeness": "harmful",
+        "has_details": true
       },
       "firefox": {
-        "completeness": "intent",
-        "has_details": true
-      },
-      "safari": {
-        "completeness": "development",
-        "has_details": true
-      },
-      "samsung": {
-        "completeness": "yes",
-        "has_details": true,
-        "since": "Internet 9.2"
-      },
-      "opera": {
-        "completeness": "yes",
-        "since": "Opera 53",
+        "completeness": "harmful",
         "has_details": true
       }
-    },
-    "animation": {
-      "chrome": {
-        "completeness": "partially",
-        "has_details": true,
-        "since": "Chrome 71"
-      },
-      "edge": {
-        "completeness": "partially",
-        "since": "Edge 79"
-      },
-      "samsung": {
-        "completeness": "partially",
-        "since": "Internet 10.2 Beta"
-      },
-      "opera": {
-        "completeness": "partially",
-        "since": "Opera 58"
-      }
-    },
-    "fontmetrics": {
     }
   }
 }

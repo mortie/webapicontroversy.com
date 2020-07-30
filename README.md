@@ -1,4 +1,6 @@
-[Is Houdini Ready Yet?](https://ishoudinireadyyet.com)
+[Web API Controversy](https://webapicontroversy.com)
+
+**Work in progress, help is very appreciated**
 
 ## Building
 
@@ -22,9 +24,11 @@ The browsers are defined in the `browser` property. The logo for the browser mus
 
 The APIs are defined in teh `api` property.
 
-Support for each browser/API pair is defined in the `status` property. `completeness` can be one of `no`, `intent`, `development`, `partially` or `yes`. The optional `since` property should tell which version of the browser has support for the API enabled. The optional `has_details` property controls whether the “Details” button should be shown.
-
 If a “Details” button is clicked, a “dialog” is openend, showing the contents of `partials/${api.tag}_${browser.tag}.html`.
+
+## Based on
+
+[Is Houdini Ready Yet?](https://ishoudinireadyyet.com)
 
 ## License
 Apache 2
