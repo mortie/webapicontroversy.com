@@ -68,6 +68,13 @@
       "spec": "https://wicg.github.io/webhid/",
       "explainer": "https://github.com/WICG/webhid/blob/master/EXPLAINER.md",
       "status": "ed"
+    },
+    {
+      "tag": "serial",
+      "name": "Serial API",
+      "spec": "https://wicg.github.io/serial/",
+      "explainer": "https://github.com/WICG/serial/blob/gh-pages/EXPLAINER.md",
+      "status": "ed"
     }
   ],
   "status": {
@@ -141,6 +148,17 @@
         "has_details": true
       },
       "safari": {
+        "completeness": "harmful",
+        "has_details": true
+      }
+    },
+    "serial": {
+      "chrome": {
+        "completeness": "partially",
+        "since": "Chrome 80",
+        "has_details": true
+      },
+      "firefox": {
         "completeness": "harmful",
         "has_details": true
       }
