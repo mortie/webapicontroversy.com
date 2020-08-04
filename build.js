@@ -33,6 +33,7 @@ data.last_update = new Date().toString();
 data.engines = {};
 data.browser.sort((a, b) => a.renderingEngine === b.renderingEngine ? (a.name > b.name ? 1 : -1) : (a.renderingEngine > b.renderingEngine ? 1 : -1));
 data.browser.forEach(browser => data.engines[browser.renderingEngine] = (data.engines[browser.renderingEngine] || 0) + 1)
+data.api.sort((a, b) => a.name === b.name ? 0 : (a.name < b.name ? -1 : 1))
 data.api.forEach(api =>
   data.browser.forEach(browser =>
     data.status[api.tag][browser.tag] = data.status[api.tag][browser.tag] || {completeness: "no signal"}
