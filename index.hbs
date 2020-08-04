@@ -359,6 +359,15 @@ limitations under the License.
       {{/each}}
     {{/with}}
   {{/each}}
+  {{#each faq}}
+    <div id="faq_{{tag}}">
+      <h2>{{question}}</h2>
+      <p>{{answer}}</p>
+      {{#if seemore}}
+        <a href="{{seemore}}">See more</a>
+      {{/if}}
+    </div>
+  {{/each}}
   <footer>
     Maintained by <a href="https://twitter.com/voxpelli" target="_blank" rel="noopener noreferrer">VoxPelli</a>,
       source code & license in the <a href="https://github.com/voxpelli/webapicontroversy.com" target="_blank" rel="noopener noreferrer">repository</a> on GitHub, PR:s are much appreciated,

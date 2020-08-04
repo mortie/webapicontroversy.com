@@ -163,5 +163,29 @@
         "has_details": true
       }
     }
-  }
+  },
+  "faq": [
+    {
+      "tag": "isthis",
+      "question":"Is this a FAQ?",
+      "answer": "Yes, it is, but as you can see it is kind of empty, so help contribute to it. PR:s are welcome.",
+      "seemore": "https://github.com/voxpelli/webapicontroversy.com/blob/master/data.json"
+    },
+    {
+      "tag": "positive",
+      "question":"Are there any positive examples of these API:s being used?",
+      "answer": "Yes, needs references to examples though."
+    },
+    {
+      "tag": "negative",
+      "question":"Are there any negative examples of these API:s being exploited/harmful?",
+      "answer": "Probably, needs references to examples though."
+    },
+    {
+      "tag": "contribute",
+      "question":"How do I contribute?",
+      "answer": "Open issues and/or PR:s about the viewpoints of browsers on controversial API:s with references to sources on that. Also come with suggestion on way to evolve this page and how to make it a more objective and reflective resource.",
+      "seemore": "https://github.com/voxpelli/webapicontroversy.com"
+    }
+  ]
 }
