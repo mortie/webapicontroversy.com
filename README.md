@@ -10,11 +10,19 @@ Running
 $ npm install
 ```
 
-```
+```sh
 $ npm run build
 ```
 
-will build `index.html`. Commit that file to master and update `gh-pages` branch to the same commit. By pushing to the repository, the live version of the website is updated.
+will build `index.html`. Commit that file to master. By pushing to the repository, the live version of the website is updated.
+
+## Developing
+
+```sh
+$ npm run watch
+```
+
+Will continously rebuild `index.html` whenever `data.json` or `index.hbs` is changed.
 
 ## Data
 
