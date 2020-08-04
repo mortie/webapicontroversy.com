@@ -61,6 +61,13 @@
       "explainer": "https://github.com/w3c/web-nfc/blob/gh-pages/EXPLAINER.md",
       "article": "https://web.dev/nfc/",
       "status": "ed"
+    },
+    {
+      "tag": "webhid",
+      "name": "Web HID API",
+      "spec": "https://wicg.github.io/webhid/",
+      "explainer": "https://github.com/WICG/webhid/blob/master/EXPLAINER.md",
+      "status": "ed"
     }
   ],
   "status": {
@@ -123,6 +130,17 @@
         "has_details": true
       },
       "firefox": {
+        "completeness": "harmful",
+        "has_details": true
+      }
+    },
+    "webhid": {
+      "chrome": {
+        "completeness": "partially",
+        "since": "Chrome 85",
+        "has_details": true
+      },
+      "safari": {
         "completeness": "harmful",
         "has_details": true
       }
