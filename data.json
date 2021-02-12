@@ -128,8 +128,8 @@
         "has_details": true
       },
       "chrome": {
-        "completeness": "partially",
-        "since": "Chrome 81",
+        "completeness": "yes",
+        "since": "Chrome 89",
         "has_details": true
       },
       "safari": {
@@ -144,7 +144,7 @@
     "webhid": {
       "chrome": {
         "completeness": "partially",
-        "since": "Chrome 85",
+        "since": "Chrome 86",
         "has_details": true
       },
       "safari": {
@@ -154,8 +154,8 @@
     },
     "serial": {
       "chrome": {
-        "completeness": "partially",
-        "since": "Chrome 80",
+        "completeness": "yes",
+        "since": "Chrome 89",
         "has_details": true
       },
       "firefox": {
