@@ -11,21 +11,6 @@
       "renderingEngine": "Gecko"
     },
     {
-      "tag": "edge",
-      "name": "Microsoft Edge",
-      "renderingEngine": "Blink"
-    },
-    {
-      "tag": "samsung",
-      "name": "Samsung Internet",
-      "renderingEngine": "Blink"
-    },
-    {
-      "tag": "brave",
-      "name": "Brave",
-      "renderingEngine": "Blink"
-    },
-    {
       "tag": "safari",
       "name": "Apple Safari",
       "renderingEngine": "WebKit"
@@ -74,10 +59,6 @@
   ],
   "status": {
     "webusb": {
-      "brave": {
-        "completeness": "deprecated",
-        "has_details": true
-      },
       "chrome": {
         "completeness": "yes",
         "since": "Chrome 61"
@@ -92,17 +73,9 @@
       }
     },
     "webbluetooth": {
-      "brave": {
-        "completeness": "harmful",
-        "has_details": true
-      },
       "chrome": {
         "completeness": "yes",
         "since": "Chrome 56"
-      },
-      "samsung": {
-        "completeness": "yes",
-        "since": "v6.4"
       },
       "safari": {
         "completeness": "harmful",
@@ -114,10 +87,6 @@
       }
     },
     "webnfc": {
-      "brave": {
-        "completeness": "harmful",
-        "has_details": true
-      },
       "chrome": {
         "completeness": "yes",
         "since": "Chrome 89",
