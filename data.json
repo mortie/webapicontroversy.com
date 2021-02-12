@@ -11,11 +11,6 @@
       "renderingEngine": "Gecko"
     },
     {
-      "tag": "opera",
-      "name": "Opera",
-      "renderingEngine": "Blink"
-    },
-    {
       "tag": "edge",
       "name": "Microsoft Edge",
       "renderingEngine": "Blink"
@@ -104,10 +99,6 @@
       "chrome": {
         "completeness": "yes",
         "since": "Chrome 56"
-      },
-      "opera": {
-        "completeness": "partially",
-        "has_details": true
       },
       "samsung": {
         "completeness": "yes",
