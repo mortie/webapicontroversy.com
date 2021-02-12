@@ -61,7 +61,8 @@
     "webusb": {
       "chrome": {
         "completeness": "yes",
-        "since": "Chrome 61"
+        "since": "Chrome 61",
+        "has_details": true
       },
       "safari": {
         "completeness": "harmful",
@@ -75,7 +76,8 @@
     "webbluetooth": {
       "chrome": {
         "completeness": "yes",
-        "since": "Chrome 56"
+        "since": "Chrome 56",
+        "has_details": true
       },
       "safari": {
         "completeness": "harmful",
@@ -103,8 +105,8 @@
     },
     "webhid": {
       "chrome": {
-        "completeness": "partially",
-        "since": "Chrome 86",
+        "completeness": "yes",
+        "since": "Chrome 89",
         "has_details": true
       },
       "safari": {
