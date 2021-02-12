@@ -139,13 +139,13 @@
     },
     {
       "tag": "controversy",
-      "question":"\"Controversy\"? Are these bad and dangerous API:s?",
-      "answer": "There is no such conclusion to make. \"Controversy\" means that there isn't yet a consensus on the future of these API:s, with browser vendors having different thoughts and opinions about the design. This can be for a wide range of reasons and the intention of this page is not to pick sides and frame an API as either good or bad. The purpose of this site is purely to collect references to each browser vendors own public signals, to help the community better get a vendor independent overview of the status of these API:s. Also highlighted is their respective status on the W3C standards track."
+      "question":"\"Controversy\"? Are these bad and dangerous APIs?",
+      "answer": "There is no such conclusion to make. \"Controversy\" means that there isn't yet a consensus on the future of these APIs, with browser vendors having different thoughts and opinions about the design. This can be for a wide range of reasons and the intention of this page is not to pick sides and frame an API as either good or bad. The purpose of this site is purely to collect references to each browser vendors own public signals, to help the community better get a vendor independent overview of the status of these APIs. Also highlighted is their respective status on the W3C standards track."
     },
     {
       "tag": "selection",
-      "question":"Why this selection of API:s?",
-      "answer": "The initial data set comes from my, @voxpelli's, personal observations of API:s with controversy around them and where hard facts has often been hard to find. Rather than just collect those references for myself, I gathered them on this page. I will happily list additional API:s that people have observed a controversy in."
+      "question":"Why this selection of APIs?",
+      "answer": "The initial data set comes from my, @voxpelli's, personal observations of APIs with controversy around them and where hard facts has often been hard to find. Rather than just collect those references for myself, I gathered them on this page. I will happily list additional APIs that people have observed a controversy in."
     },
     {
       "tag": "w3c-groups",
@@ -174,7 +174,7 @@
     {
       "tag": "contribute",
       "question":"How do I contribute to this list?",
-      "answer": "Open issues and/or PR:s about the viewpoints of browsers on controversial API:s with references to sources on that. Also come with suggestion on way to evolve this page and how to make it a more objective and reflective resource.",
+      "answer": "Open issues and/or PR:s about the viewpoints of browsers on controversial APIs with references to sources on that. Also come with suggestion on way to evolve this page and how to make it a more objective and reflective resource.",
       "seemore": "https://github.com/voxpelli/webapicontroversy.com"
     }
   ]

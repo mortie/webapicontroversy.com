@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "repository": "https://github.com/voxpelli/webapicontroversy.com",
-  "description": "Website to show browser opinions on controversial API:s",
+  "description": "Website to show browser opinions on controversial APIs",
   "license": "Apache-2.0",
   "dependencies": {
     "handlebars": "^4.0.5",
