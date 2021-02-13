@@ -149,19 +149,19 @@
     },
     {
       "tag": "w3c-groups",
-      "question":"What types of W3C groups are there?",
-      "answer": "Simplified one can say that there are Community Groups and Working Groups.",
+      "question":"What are W3C groups?",
+      "answer": "Simplified one can say that there are two kinds, the Community Groups and the Working Groups.",
       "seemore": "https://www.w3.org/groups/"
     },
     {
       "tag": "community-group-reports",
-      "question":"Does W3C Community Group publish W3C standards?",
+      "question":"Do W3C Community Groups publish W3C standards?",
       "answer": "No, they publish Community Group Reports and Drafts of those. In our table these will be refered to as \"Community Report\" and \"Community Draft\".",
       "seemore": "https://www.w3.org/community/about/faq/#are-community-and-business-group-specifications-w3c-standards"
     },
     {
       "tag": "w3c-standards",
-      "question":"Who published W3C standards?",
+      "question":"Who publishes W3C standards?",
       "answer": "The W3C Working Groups publishes W3C standards and does so at different maturity levels, indicating how far and how stable the standard is.",
       "seemore": "https://www.w3.org/groups/wg/"
     },
